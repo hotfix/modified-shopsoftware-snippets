@@ -23,20 +23,6 @@
  * - Wird für Google Shopping als „geplanter Abruf“ genutzt
  * - Erfordert gültige Produktdaten in der Datenbank
  */
-if (!isset($_GET['token']) || $_GET['token'] !== 'geheim123') {
-    die('Access denied');
-}
-<?php
-/**
- * Google Merchant Produktfeed (optimiert)
- *
- * Generiert ein XML-Feed mit Brutto-Preisen, Sonderpreisen, Verfügbarkeit,
- * EAN (gtin), Herstellernummer (mpn) und Token-Absicherung.
- *
- * @author     Dein Name
- * @version    1.1
- * @date       2025-04-23
- */
 
 define('MERCHANT_TAX_RATE', 19.0); // Fester MwSt-Satz
 
